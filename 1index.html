@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRAIDER - Download</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0d0d0d;color:#fff;font-family:'Segoe UI',sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;user-select:none;cursor:default}
+        .container{text-align:center;max-width:600px;padding:40px}
+        .logo{font-size:64px;font-weight:800;color:#c0c0c0;margin-bottom:4px;letter-spacing:-2px}
+        .tagline{color:#555;font-size:11px;letter-spacing:3px;margin-bottom:8px}
+        .version{color:#444;font-size:12px;margin-bottom:48px}
+        .card{background:#1a1a1a;border:1px solid #222;border-radius:16px;padding:40px;margin-bottom:20px}
+        .card h2{color:#c0c0c0;font-size:22px;margin-bottom:8px}
+        .card p{color:#666;font-size:13px;margin-bottom:24px;line-height:1.6}
+        .btn{display:inline-block;width:100%;padding:16px;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:default;text-decoration:none;transition:.2s}
+        .btn-download{background:#10b981;color:#fff;margin-bottom:10px}.btn-download:hover{background:#059669}
+        .btn-discord{background:#333;color:#fff}.btn-discord:hover{background:#444}
+        .features{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:40px}
+        .feature{background:#1a1a1a;border:1px solid #222;border-radius:12px;padding:24px;text-align:center}
+        .feature .icon{font-size:28px;margin-bottom:12px}
+        .feature h3{color:#c0c0c0;font-size:14px;margin-bottom:6px}
+        .feature p{color:#555;font-size:11px;line-height:1.5}
+        .footer{color:#333;font-size:10px;margin-top:40px;letter-spacing:1px}
+        .footer a{color:#555;text-decoration:none}
+        .footer a:hover{color:#888}
+        @media(max-width:600px){.features{grid-template-columns:1fr}.container{padding:20px}.logo{font-size:42px}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">XRAIDER</div>
+        <div class="tagline">DISCORD TOOLS</div>
+        <div class="version">v1.0</div>
+
+        <div class="card">
+            <h2>Download</h2>
+            <p>download rapidao mane .</p>
+            <a href="https://github.com/Cf-Tp/Xraider/releases/download/v1.0/Xraider.exe" class="btn btn-download">DOWNLOAD XRAIDER</a>
+            <a href="https://discord.gg/2YUsbDu4fY" class="btn btn-discord">JOIN DISCORD</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="icon"></div>
+                <h3>Tauri app</h3>
+                <p>Otimizado feito em tauri, javascript e module</p>
+            </div>
+            <div class="feature">
+                <div class="icon"></div>
+                <h3>Indetectavel, demora 5 segundo e quando voce ver ja raidou tudo</h3>
+                <p></p>
+            </div>
+            <div class="feature">
+                <div class="icon"></div>
+                <h3>Nuke avançada</h3>
+                <p>Com nuke avançada, usando undici libray</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            XRAIDER &copy; 2024 | <a href="https://github.com/Cf-Tp/Xraider">GitHub</a> | <a href="https://discord.gg/yourserver">Support</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'u')) {
+                e.preventDefault(); return false;
+            }
+        });
+    </script>
+</body>
+</html>
